@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=FileNotFoundException
+comment1.params=message\ cause
+comment1.target=FileNotFoundException(java.lang.String,\ java.lang.Throwable)
+numComments=2

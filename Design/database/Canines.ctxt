@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Canine
+comment1.params=
+comment1.target=Canine()
+comment2.params=petID\ name\ age\ sex\ specie\ breed\ weight\ size\ prev_Vetrecord\ has_Allergy\ add_Info\ consult_Motive\ spayed\ obedience_Level
+comment2.target=Canine(java.lang.String,\ java.lang.String,\ int,\ char,\ java.lang.String,\ java.lang.String,\ double,\ java.lang.String,\ java.lang.String,\ boolean,\ java.lang.String,\ java.lang.String,\ boolean,\ java.lang.String)
+comment3.params=
+comment3.target=boolean\ isSpayed()
+comment4.params=spayed
+comment4.target=void\ setSpayed(boolean)
+comment5.params=
+comment5.target=java.lang.String\ getObedience_Level()
+comment6.params=obedience_Level
+comment6.target=void\ setObedience_Level(java.lang.String)
+comment7.params=canine
+comment7.target=void\ updateSpayed(Canine)
+comment8.params=advice\ canine
+comment8.target=java.lang.String\ trainingTips(java.lang.String,\ Canine)
+numComments=9

@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Rodent
+comment1.params=
+comment1.target=Rodent()
+comment2.params=pet_ID\ name\ age\ sex\ specie\ breed\ weight\ size\ prev_Vetrecord\ has_Allergy\ add_Info\ consult_Motive\ cage_Type\ tooth_Length
+comment2.target=Rodent(java.lang.String,\ java.lang.String,\ int,\ char,\ java.lang.String,\ java.lang.String,\ double,\ java.lang.String,\ java.lang.String,\ boolean,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ double)
+comment3.params=
+comment3.target=java.lang.String\ getCage_Type()
+comment4.params=cage_Type
+comment4.target=void\ setCage_Type(java.lang.String)
+comment5.params=
+comment5.target=double\ getTooth_Length()
+comment6.params=tooth_Length
+comment6.target=void\ setTooth_Length(double)
+comment7.params=advice\ rodent
+comment7.target=java.lang.String\ recommendCageType(java.lang.String,\ Rodent)
+comment8.params=tooth_Length
+comment8.target=double\ monitorToothGrowth(double)
+numComments=9

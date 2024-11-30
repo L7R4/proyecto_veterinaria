@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=DataBaseManager
+comment1.params=file
+comment1.target=DataBaseManager(java.lang.String)
+comment2.params=object
+comment2.target=void\ add(java.io.Serializable)
+comment3.params=ID
+comment3.target=void\ delete(java.lang.String)
+comment4.params=object
+comment4.target=void\ modify(java.io.Serializable)
+comment5.params=
+comment5.target=java.util.List\ list()
+comment6.params=ID
+comment6.target=java.io.Serializable\ consult(java.lang.String)
+comment7.params=
+comment7.target=void\ save()
+comment8.params=
+comment8.target=java.util.List\ load()
+numComments=9

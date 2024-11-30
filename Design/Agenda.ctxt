@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Agenda
+comment1.params=
+comment1.target=Agenda()
+comment10.params=obj
+comment10.target=boolean\ equals(java.lang.Object)
+comment11.params=
+comment11.target=int\ hashCode()
+comment12.params=
+comment12.target=java.lang.String\ toString()
+comment2.params=id\ title
+comment2.target=Agenda(java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getId()
+comment4.params=id
+comment4.target=void\ setId(java.lang.String)
+comment5.params=
+comment5.target=java.lang.String\ getTitle()
+comment6.params=title
+comment6.target=void\ setTitle(java.lang.String)
+comment7.params=
+comment7.target=java.time.LocalDateTime\ getCreationDate()
+comment8.params=creationDate
+comment8.target=void\ setCreationDate(java.time.LocalDateTime)
+comment9.params=other
+comment9.target=int\ compareTo(Agenda)
+numComments=13

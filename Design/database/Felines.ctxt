@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Feline
+comment1.params=
+comment1.target=Feline()
+comment10.params=advice\ feline
+comment10.target=java.lang.String\ adviseGroomingRoutine(java.lang.String,\ Feline)
+comment2.params=pet_ID\ name\ age\ sex\ specie\ breed\ weight\ size\ prev_Vetrecord\ has_Allergy\ add_Info\ consult_Motive\ spayed\ lives_Indoor\ grooming_Needs
+comment2.target=Feline(java.lang.String,\ java.lang.String,\ int,\ char,\ java.lang.String,\ java.lang.String,\ double,\ java.lang.String,\ java.lang.String,\ boolean,\ java.lang.String,\ java.lang.String,\ boolean,\ boolean,\ java.lang.String)
+comment3.params=
+comment3.target=boolean\ isSpayed()
+comment4.params=spayed
+comment4.target=void\ setSpayed(boolean)
+comment5.params=
+comment5.target=boolean\ isLives_Indoor()
+comment6.params=lives_Indoor
+comment6.target=void\ setLives_Indoor(boolean)
+comment7.params=
+comment7.target=java.lang.String\ getGrooming_Needs()
+comment8.params=grooming_Needs
+comment8.target=void\ setGrooming_Needs(java.lang.String)
+comment9.params=feline
+comment9.target=void\ update_Spayed(Feline)
+numComments=11

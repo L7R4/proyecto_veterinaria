@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Avian
+comment1.params=
+comment1.target=Avian()
+comment10.params=advice\ avian
+comment10.target=java.lang.String\ adviseDiet(java.lang.String,\ Avian)
+comment2.params=pet_ID\ name\ age\ sex\ specie\ breed\ weight\ size\ prev_Vetrecord\ has_Allergy\ add_Info\ consult_Motive\ wings_Span\ can_Fly\ diet_Type
+comment2.target=Avian(java.lang.String,\ java.lang.String,\ int,\ char,\ java.lang.String,\ java.lang.String,\ double,\ java.lang.String,\ java.lang.String,\ boolean,\ java.lang.String,\ java.lang.String,\ double,\ boolean,\ java.lang.String)
+comment3.params=
+comment3.target=double\ getWings_Span()
+comment4.params=wings_Span
+comment4.target=void\ setWings_Span(double)
+comment5.params=
+comment5.target=boolean\ getCan_Fly()
+comment6.params=can_Fly
+comment6.target=void\ setCan_Fly(boolean)
+comment7.params=
+comment7.target=java.lang.String\ getDiet_Type()
+comment8.params=diet_Type
+comment8.target=void\ setDiet_Type(java.lang.String)
+comment9.params=advice\ avian
+comment9.target=java.lang.String\ recommendCageSpace(java.lang.String,\ Avian)
+numComments=11

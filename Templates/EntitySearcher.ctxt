@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=EntitySearcher
+comment1.params=entityManager
+comment1.target=EntitySearcher(EntityManager)
+comment10.params=str
+comment10.target=java.lang.String\ capitalize(java.lang.String)
+comment11.params=
+comment11.target=java.util.List\ getRecentSearches()
+comment12.params=
+comment12.target=void\ clearCache()
+comment2.params=criteria
+comment2.target=java.util.List\ search(SearchCriteria)
+comment3.params=criteria
+comment3.target=void\ addToRecentSearches(SearchCriteria)
+comment4.params=criteria
+comment4.target=java.util.Set\ searchUnique(SearchCriteria)
+comment5.params=criteria
+comment5.target=java.util.Set\ searchSorted(SearchCriteria)
+comment6.params=criteria\ page\ pageSize
+comment6.target=java.util.List\ searchWithPagination(SearchCriteria,\ int,\ int)
+comment7.params=criteria\ groupByField
+comment7.target=java.util.Map\ groupSearchResults(SearchCriteria,\ java.lang.String)
+comment8.params=criteria
+comment8.target=java.util.function.Predicate\ createFilterPredicate(SearchCriteria)
+comment9.params=entity\ fieldName
+comment9.target=java.lang.String\ getFieldValue(Entity,\ java.lang.String)
+numComments=13

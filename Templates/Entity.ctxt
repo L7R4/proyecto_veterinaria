@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Entity
+comment1.params=id\ type
+comment1.target=Entity(java.lang.String,\ EntityType)
+comment2.params=
+comment2.target=java.lang.String\ getId()
+comment3.params=id
+comment3.target=void\ setId(java.lang.String)
+comment4.params=
+comment4.target=EntityType\ getType()
+comment5.params=type
+comment5.target=void\ setType(EntityType)
+comment6.params=o
+comment6.target=boolean\ equals(java.lang.Object)
+comment7.params=
+comment7.target=int\ hashCode()
+comment8.params=
+comment8.target=java.lang.String\ toString()
+comment9.params=o
+comment9.target=int\ compareTo(Entity)
+numComments=10

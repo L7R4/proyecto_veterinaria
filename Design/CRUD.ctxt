@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=CRUD
+comment1.params=objeto
+comment1.target=void\ add(java.lang.Object)
+comment2.params=ID
+comment2.target=void\ delete(java.lang.String)
+comment3.params=objeto
+comment3.target=void\ modify(java.lang.Object)
+comment4.params=
+comment4.target=java.util.List\ list()
+comment5.params=ID
+comment5.target=java.lang.Object\ consult(java.lang.String)
+numComments=6

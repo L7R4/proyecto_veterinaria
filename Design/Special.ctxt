@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Special
+comment1.params=
+comment1.target=Special()
+comment2.params=pet_ID\ name\ age\ sex\ specie\ breed\ weight\ size\ prev_Vetrecord\ has_Allergy\ add_Info\ consult_Motive\ care_Difficulty\ venomous
+comment2.target=Special(java.lang.String,\ java.lang.String,\ int,\ char,\ java.lang.String,\ java.lang.String,\ double,\ java.lang.String,\ java.lang.String,\ boolean,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ boolean)
+comment3.params=
+comment3.target=java.lang.String\ getCare_Difficulty()
+comment4.params=care_Difficulty
+comment4.target=void\ setCare_Difficulty(java.lang.String)
+comment5.params=
+comment5.target=boolean\ isVenomous()
+comment6.params=venomous
+comment6.target=void\ setVenomous(boolean)
+comment7.params=advice\ special
+comment7.target=java.lang.String\ provideCareInstructions(java.lang.String,\ Special)
+comment8.params=advice\ special
+comment8.target=java.lang.String\ manageSafetyPrecautions(java.lang.String,\ Special)
+numComments=9

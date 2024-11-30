@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Administration
+comment1.params=
+comment1.target=Administration()
+comment2.params=label\ db\ windowClass
+comment2.target=void\ addDatabaseButton(java.lang.String,\ Design.DataBaseManager,\ java.lang.Class)
+comment3.params=e
+comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+comment5.params=
+comment5.target=void\ run()
+numComments=6

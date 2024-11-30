@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Task
+comment1.params=
+comment1.target=Task()
+comment10.params=priority
+comment10.target=void\ setPriority(TaskPriority)
+comment11.params=other
+comment11.target=int\ compareTo(Agenda)
+comment12.params=
+comment12.target=java.lang.String\ toString()
+comment2.params=id\ title\ description\ dueDate\ priority
+comment2.target=Task(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.time.LocalDate,\ TaskPriority)
+comment3.params=
+comment3.target=java.lang.String\ getDescription()
+comment4.params=description
+comment4.target=void\ setDescription(java.lang.String)
+comment5.params=
+comment5.target=java.time.LocalDate\ getDueDate()
+comment6.params=dueDate
+comment6.target=void\ setDueDate(java.time.LocalDate)
+comment7.params=
+comment7.target=boolean\ isCompleted()
+comment8.params=completed
+comment8.target=void\ setCompleted(boolean)
+comment9.params=
+comment9.target=TaskPriority\ getPriority()
+numComments=13

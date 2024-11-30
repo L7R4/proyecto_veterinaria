@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Sign_Up
+comment1.params=
+comment1.target=Sign_Up()
+comment2.params=label\ field
+comment2.target=javax.swing.JPanel\ createFormField(java.lang.String,\ javax.swing.JComponent)
+comment3.params=items
+comment3.target=javax.swing.JComboBox\ createComboBox(java.lang.String[])
+comment4.params=
+comment4.target=javax.swing.JSpinner\ createDateSpinner()
+comment5.params=
+comment5.target=void\ submitForm()
+comment6.params=
+comment6.target=boolean\ validateForm()
+comment7.params=
+comment7.target=void\ backToLogin()
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9

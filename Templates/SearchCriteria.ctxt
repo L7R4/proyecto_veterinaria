@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=SearchCriteria
+comment1.params=type
+comment1.target=SearchCriteria(EntityType)
+comment2.params=key\ value
+comment2.target=void\ addFilter(java.lang.String,\ java.lang.Object)
+comment3.params=
+comment3.target=EntityType\ getType()
+comment4.params=
+comment4.target=java.util.Map\ getFilters()
+numComments=5
