@@ -48,22 +48,22 @@ public class PasswordRecovery extends JFrame {
 
         // Instructions label
         instructionslbl1 = new JLabel();
-	instructionslbl1.setBounds(140,96,250,35);
-	instructionslbl1.setBackground(new Color(214,217,223));
-	instructionslbl1.setForeground(new Color(128,128,128));
-	instructionslbl1.setEnabled(true);
-	instructionslbl1.setFont(new Font("SansSerif",2,15));
-	instructionslbl1.setText("Please, enter your ID and answer");
-	instructionslbl1.setVisible(true);
-	
-	instructionslbl2 = new JLabel();
-	instructionslbl2.setBounds(95,121,340,35);
-	instructionslbl2.setBackground(new Color(214,217,223));
-	instructionslbl2.setForeground(new Color(128,128,128));
-	instructionslbl2.setEnabled(true);
-	instructionslbl2.setFont(new Font("SansSerif",2,15));
-	instructionslbl2.setText("the security question to change your password");
-	instructionslbl2.setVisible(true);
+    instructionslbl1.setBounds(140,96,250,35);
+    instructionslbl1.setBackground(new Color(214,217,223));
+    instructionslbl1.setForeground(new Color(128,128,128));
+    instructionslbl1.setEnabled(true);
+    instructionslbl1.setFont(new Font("SansSerif",2,15));
+    instructionslbl1.setText("Please, enter your ID and answer");
+    instructionslbl1.setVisible(true);
+    
+    instructionslbl2 = new JLabel();
+    instructionslbl2.setBounds(95,121,340,35);
+    instructionslbl2.setBackground(new Color(214,217,223));
+    instructionslbl2.setForeground(new Color(128,128,128));
+    instructionslbl2.setEnabled(true);
+    instructionslbl2.setFont(new Font("SansSerif",2,15));
+    instructionslbl2.setText("the security question to change your password");
+    instructionslbl2.setVisible(true);
 
         // Security question label and field
         JLabel securityqlbl = new JLabel("What was the name of your first pet?");
@@ -89,7 +89,6 @@ public class PasswordRecovery extends JFrame {
         backToLoginButton.setBounds(172, 370, 150, 35);
         backToLoginButton.setBackground(new Color(31, 70, 59));
         backToLoginButton.setForeground(Color.WHITE);
-        backToLoginButton.setEnabled(false);  // Disabled initially
         backToLoginButton.setFont(new Font("SansSerif", Font.BOLD, 16));
         contentPane.add(backToLoginButton);
 

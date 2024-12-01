@@ -10,6 +10,7 @@ import java.util.Date;
 public class VeterinaryDashboard extends JFrame {
     private DefaultListModel<String> taskModel;
     private JTextArea agendaArea;
+    private Administration administrationPanel;
 
     public VeterinaryDashboard() {
        
@@ -43,77 +44,98 @@ public class VeterinaryDashboard extends JFrame {
         loadAgendaAndTasks();  
     }
 
-    private void addUserSection(JPanel leftPanel) {
-    // Load and resize user image
-    ImageIcon originalImage = new ImageIcon("C:/Users/aleja/OneDrive/Documentos/GUIVETAPP/User_DefaultPic/default_pic.png");
-    Image resizedImage = originalImage.getImage().getScaledInstance(200, 100, Image.SCALE_SMOOTH);
-    ImageIcon userImageIcon = new ImageIcon(resizedImage);
-
-    // User icon and name
-    JLabel userIcon = new JLabel(userImageIcon);
-    userIcon.setAlignmentX(Component.CENTER_ALIGNMENT);
-
-    JLabel userName = new JLabel("Ryan Gosling");
-    userName.setAlignmentX(Component.CENTER_ALIGNMENT);
-    userName.setForeground(Color.WHITE);
-    userName.setFont(new Font("SansSerif", Font.BOLD, 18));
-
-    // Add components with spacing
-    leftPanel.add(Box.createVerticalGlue()); // Push everything down
-    leftPanel.add(userIcon);
-    leftPanel.add(Box.createRigidArea(new Dimension(0, 10)));
-    leftPanel.add(userName);
-    leftPanel.add(Box.createRigidArea(new Dimension(0, 40))); // Extra space before sections
-}
-
-private void addSectionButtons(JPanel leftPanel) {
-    String[] sections = {
-        "Administration", "Clinical Records", "Appointments",
-        "Inventory", "Billing and Payments", "Reports and Statistics"
-    };
-
-    Color[] hoverColors = {
-        new Color(204, 163, 0),
-        new Color(153, 102, 255),
-        new Color(102, 204, 0),
-        new Color(255, 102, 102),
-        new Color(255, 153, 51),
-        new Color(51, 153, 255)
-    };
-
+        private void addUserSection(JPanel leftPanel) {
+        // Load and resize user image
+        ImageIcon originalImage = new ImageIcon("C:/Users/aleja/OneDrive/Documentos/GUIVETAPP/User_DefaultPic/default_pic.png");
+        Image resizedImage = originalImage.getImage().getScaledInstance(200, 100, Image.SCALE_SMOOTH);
+        ImageIcon userImageIcon = new ImageIcon(resizedImage);
     
-    for (int i = 0; i < sections.length; i++) {
-        JLabel button = new JLabel(sections[i]);
-        button.setAlignmentX(Component.CENTER_ALIGNMENT);
-        button.setForeground(Color.WHITE);
-        button.setFont(new Font("SansSerif", Font.PLAIN, 16));
-        button.setOpaque(true);
-        button.setBackground(Color.BLACK);
-        button.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-
-        final Color hoverColor = hoverColors[i];
-        button.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                button.setBackground(hoverColor);
-                button.setFont(new Font("SansSerif", Font.BOLD, 18));
-            }
-
-            @Override
-            public void mouseExited(MouseEvent e) {
-                button.setBackground(Color.BLACK);
-                button.setFont(new Font("SansSerif", Font.PLAIN, 16));
-            }
-        });
-
-        leftPanel.add(button);
-        leftPanel.add(Box.createRigidArea(new Dimension(0, 25))); 
+        // User icon and name
+        JLabel userIcon = new JLabel(userImageIcon);
+        userIcon.setAlignmentX(Component.CENTER_ALIGNMENT);
+    
+        JLabel userName = new JLabel("Ryan Gosling");
+        userName.setAlignmentX(Component.CENTER_ALIGNMENT);
+        userName.setForeground(Color.WHITE);
+        userName.setFont(new Font("SansSerif", Font.BOLD, 18));
+    
+        // Add components with spacing
+        leftPanel.add(Box.createVerticalGlue()); // Push everything down
+        leftPanel.add(userIcon);
+        leftPanel.add(Box.createRigidArea(new Dimension(0, 10)));
+        leftPanel.add(userName);
+        leftPanel.add(Box.createRigidArea(new Dimension(0, 40))); // Extra space before sections
     }
 
-    leftPanel.add(Box.createVerticalGlue()); 
-}
+    private void addSectionButtons(JPanel leftPanel) {
+        String[] sections = {
+            "Administration", "Clinical Records", "Appointments",
+            "Inventory", "Billing and Payments", "Reports and Statistics"
+        };
+    
+        Color[] hoverColors = {
+            new Color(204, 163, 0),
+            new Color(153, 102, 255),
+            new Color(102, 204, 0),
+            new Color(255, 102, 102),
+            new Color(255, 153, 51),
+            new Color(51, 153, 255)
+        };
+    
+        
+        for (int i = 0; i < sections.length; i++) {
+            JLabel button = new JLabel(sections[i]);
+            button.setAlignmentX(Component.CENTER_ALIGNMENT);
+            button.setForeground(Color.WHITE);
+            button.setFont(new Font("SansSerif", Font.PLAIN, 16));
+            button.setOpaque(true);
+            button.setBackground(Color.BLACK);
+            button.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+    
+            final Color hoverColor = hoverColors[i];
+            
+            final String sectionName = sections[i]; // Copia a una variable final
+            
+            button.addMouseListener(new MouseAdapter() {
+                @Override
+                public void mouseEntered(MouseEvent e) {
+                    button.setBackground(hoverColor);
+                    button.setFont(new Font("SansSerif", Font.BOLD, 18));
+                }
+    
+                @Override
+                public void mouseExited(MouseEvent e) {
+                    button.setBackground(Color.BLACK);
+                    button.setFont(new Font("SansSerif", Font.PLAIN, 16));
+                }
+                
+                @Override
+                public void mouseClicked(MouseEvent e) {
+                    showSectionWindow(sectionName);
+                }
+            });
+    
+            leftPanel.add(button);
+            leftPanel.add(Box.createRigidArea(new Dimension(0, 25))); 
+        }
+    
+        leftPanel.add(Box.createVerticalGlue()); 
+    }
 
-
+    
+    // Mostrar las ventanas de acuerdo el nombre seleccionado de la seccion
+    private void showSectionWindow(String sectionName){
+        if(sectionName == "Administration"){
+            Administration adminPanel = new Administration();
+            adminPanel.setSize(700, 500);
+            adminPanel.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            adminPanel.setVisible(true);
+        }
+        
+        // Continuar agregando Ifs para mostrar las demas ventanas
+    }
+    
+    
     private void addSettingsOption(JPanel leftPanel) {
         JLabel settingsLabel = new JLabel("Settings");
         settingsLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
